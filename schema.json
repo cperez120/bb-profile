@@ -1,41 +1,73 @@
 {
   "type": "component",
-  "metadata": {},
+  "metadata": {
+    "svelteMajor": 5
+  },
   "schema": {
-    "name": "bb-avatar",
-    "friendlyName": "bb-avatar",
+    "name": "bb-profile",
+    "friendlyName": "bb-profile",
     "description": "A content component for a profile picture and some details",
-    "icon": "Text",
+    "icon": "Image",
     "settings": [
       {
         "type": "text",
         "key": "imageUrl",
-        "label": "Image URL"
+        "label": "Image URL",
+        "placeholder": "https://example.com/avatar.jpg"
       },
       {
         "type": "select",
-        "options": ["16px", "24px", "32px","40px", "48px"],
+        "options": [
+          "16px",
+          "24px",
+          "32px",
+          "40px",
+          "48px",
+          "56px",
+          "64px",
+          "72px",
+          "80px",
+          "88px",
+          "96px"
+        ],
         "key": "size",
         "label": "Avatar Size",
-        "defaultValue": "32px"
+        "defaultValue": "56px"
       },
       {
         "type": "boolean",
         "key": "isShowingDetails",
-        "label": "Show details?"
+        "label": "Show details?",
+        "defaultValue": true
+      },
+      {
+        "type": "text",
+        "key": "name",
+        "label": "Name",
+        "dependsOn": "isShowingDetails",
+        "placeholder": "John Doe"
+      },
+      {
+        "type": "text",
+        "key": "department",
+        "label": "Department",
+        "dependsOn": "isShowingDetails",
+        "placeholder": "Engineering"
       },
       {
         "type": "text",
         "key": "title",
         "label": "Title",
-        "dependsOn": "isShowingDetails"
+        "dependsOn": "isShowingDetails",
+        "placeholder": "Software Engineer"
       },
-      {
-        "type": "text",
-        "key": "caption",
-        "label": "Caption",
-        "dependsOn": "isShowingDetails"
+     {
+        "key": "color",
+        "label": "Text color",
+        "type": "color",
+        "defaultValue": ""
       }
-    ]
+    ],
+  "styles": ["margin", "padding", "size", "background", "border"]
   }
 }
