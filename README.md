@@ -1,8 +1,8 @@
-# Bb-avatar
+# Bb-profile
 This is a readme for your new Budibase plugin.
 
 # Description
-A content component for a profile picture and some details
+Budibase Profile Pic Plugin
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 

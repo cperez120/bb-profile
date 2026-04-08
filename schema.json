@@ -61,7 +61,7 @@
         "dependsOn": "isShowingDetails",
         "placeholder": "Software Engineer"
       },
-     {
+      {
         "key": "color",
         "label": "Text color",
         "type": "color",
